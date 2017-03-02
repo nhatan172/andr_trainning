@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Ex4</string>
+
+    <string name="bye">Bye</string>
+    <string name="hello">Hello</string>
+    <string name="instruction">Please click on button below!</string>
+</resources>
