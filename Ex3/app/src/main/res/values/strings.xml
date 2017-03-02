@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Ex3</string>
+
+    <!-- activity_main -->
+    <string name="click_me">Click me</string>
+    <string name="push_up">Push me</string>
+    <string name="test">This is test</string>
+
+    <string name="red_prompt">Red</string>
+    <string name="blue_prompt">Blue</string>
+    <string name="yellow_prompt">Yellow</string>
+</resources>
