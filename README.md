@@ -1,1 +1,1 @@
-Exersice for Android trainning
+Exercises for Android trainning
