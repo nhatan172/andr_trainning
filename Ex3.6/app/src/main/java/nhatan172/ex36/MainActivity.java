@@ -1,4 +1,4 @@
-package m1k4sa.ex3;
+package nhatan172.ex36;
 
 import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
@@ -13,8 +13,9 @@ import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
 
+    private TextView tv;
     private int[] mColorChoices = {Color.RED,Color.BLUE,Color.YELLOW};
-    private HashMap<Button,Integer> coupleBtnTimes = new HashMap<>();
+    private int countClick = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,32 +28,23 @@ public class MainActivity extends AppCompatActivity {
 
         btn_click = (Button)findViewById(R.id.btn_click);
         btn_push = (Button)findViewById(R.id.btn_push);
+        tv = (TextView)findViewById(R.id.tv_test);
 
-        coupleBtnTimes.put(btn_click,0);
-        coupleBtnTimes.put(btn_push,0);
-
-        btn_click.setOnClickListener(new Toaster(btn_click));
-        btn_push.setOnClickListener(new Toaster(btn_push));
+        btn_click.setOnClickListener(new Toaster());
+        btn_push.setOnClickListener(new Toaster());
     }
 
     private class Toaster implements View.OnClickListener {
-
-        Button btn_click;
-
-        public Toaster(Button btn){
-            this.btn_click = btn;
-        }
 
         @Override
         public void onClick(View clickedButton) {
             Random generator = new Random();
             int index = generator.nextInt(mColorChoices.length);
-            btn_click.setBackgroundColor(mColorChoices[index]);
-            int i = coupleBtnTimes.get(btn_click)+1;
-            coupleBtnTimes.put(btn_click, i);
+            tv.setBackgroundColor(mColorChoices[index]);
+            countClick += 1;
             Toast tempMessage =
                     Toast.makeText(MainActivity.this,
-                            "I was clicked "+ i + " times",
+                            "I was clicked "+ countClick + " times",
                             Toast.LENGTH_SHORT);
             tempMessage.show();
         }

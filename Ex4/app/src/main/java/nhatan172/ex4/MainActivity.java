@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -14,27 +15,45 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button btn_hello = (Button)findViewById(R.id.btn_hello);
-        Button btn_bye = (Button)findViewById(R.id.btn_bye);
-        TextView tv_message = (TextView)findViewById(R.id.tv_message);
+        //Named inner class
+        Button btn_hello1 = (Button)findViewById(R.id.btn_hello1);
+        Button btn_bye1 = (Button)findViewById(R.id.btn_bye1);
 
-        btn_hello.setOnClickListener(new ChangeText(btn_hello,tv_message));
-        btn_bye.setOnClickListener(new ChangeText(btn_bye,tv_message));
+        btn_hello1.setOnClickListener(new ChangeText(btn_hello1));
+        btn_bye1.setOnClickListener(new ChangeText(btn_bye1));
+
+        //Separate class
+        Button btn_hello2 = (Button)findViewById(R.id.btn_hello2);
+        Button btn_bye2 = (Button)findViewById(R.id.btn_bye2);
+
+        btn_hello2.setOnClickListener(new Toaster(btn_hello2,this));
+        btn_bye2.setOnClickListener(new Toaster(btn_bye2,this));
     }
 
+
+    //Class for Named inner class
     private class ChangeText implements View.OnClickListener{
-
         private Button btn_Clicked;
-        private TextView tv_message;
 
-        public ChangeText(Button btn, TextView tv){
+        public ChangeText(Button btn){
             this.btn_Clicked = btn;
-            this.tv_message = tv;
         }
 
         @Override
         public void onClick(View view) {
-            tv_message.setText(btn_Clicked.getText());
+            CharSequence message = btn_Clicked.getText();
+            Toast tempMessage = Toast.makeText(MainActivity.this,message,Toast.LENGTH_SHORT);
+            tempMessage.show();
         }
+    }
+
+    //Specifying the Event Handler Method
+    public void showBye(View v){
+        Toast tempMessage = Toast.makeText(MainActivity.this,"Bye",Toast.LENGTH_SHORT);
+        tempMessage.show();
+    }
+    public void showHi(View v){
+        Toast tempMessage = Toast.makeText(MainActivity.this,"Hello",Toast.LENGTH_SHORT);
+        tempMessage.show();
     }
 }

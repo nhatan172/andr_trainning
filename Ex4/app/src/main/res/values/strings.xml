@@ -3,5 +3,8 @@
 
     <string name="bye">Bye</string>
     <string name="hello">Hello</string>
-    <string name="instruction">Please click on button below!</string>
+    <string name="title1">Named inner class</string>
+    <string name="title2">Separate class</string>
+    <string name="title3">Specifying the Event Handler Method</string>
+
 </resources>
