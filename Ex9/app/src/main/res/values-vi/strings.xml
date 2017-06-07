@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Ex9</string>
+
+    <string name="btn_name_1">Chúc vui vẻ</string>
+    <string name="btn_name_2">Làm gì đó</string>
+    <string name="btn_name_3">Click vào đây</string>
+    <string name="btn_name_4">Ngạc nhiên chưa</string>
+
+</resources>

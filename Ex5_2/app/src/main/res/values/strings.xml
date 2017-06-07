@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Ex5_2</string>
+
+    <!-- Main Activity -->
+    <string-array name="spinner_entities">
+        <item>Red</item>
+        <item>Yellow</item>
+        <item>Blue</item>
+        <item>Green</item>
+    </string-array>
+    <string name="spinner_promt">Choose a color</string>
+
+</resources>

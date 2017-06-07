@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Ex9</string>
+
+    <string name="btn_name_1">楽しむ</string>
+    <string name="btn_name_2">何かをする</string>
+    <string name="btn_name_3">ここをクリック</string>
+    <string name="btn_name_4">びっくり</string>
+
+</resources>

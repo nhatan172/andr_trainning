@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Ex5_2.3</string>
+    <!-- Activity 1 -->
+    <string name="btn_name1">Go to Activity 2</string>
+    <string name="tv_title1">Activity 1</string>
+    <!-- Activity 2 -->
+    <string name="btn_name2">Go to Activity 1</string>
+    <string name="tv_title2">Activity 2</string>
+
+</resources>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Ex9</string>
+
+    <string name="btn_name_1">Have Fun</string>
+    <string name="btn_name_2">Do something</string>
+    <string name="btn_name_3">Click Here</string>
+    <string name="btn_name_4">Surprise</string>
+
+</resources>

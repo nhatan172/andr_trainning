@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Ex5</string>
+    
+    <string name="red">Red</string>
+    <string name="blue">Blue</string>
+    <string name="n_red">Not Red</string>
+    <string name="n_blue">Not Blue</string>
+    <string name="yellow">Yellow</string>
+    <string name="n_yellow">Not Yellow</string>
+    <string name="btn_setColor">Set Color Chosen Above</string>
+
+</resources>

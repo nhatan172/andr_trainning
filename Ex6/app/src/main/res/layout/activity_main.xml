@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="nhatan172.ex6.MainActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioGroup
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:checkedButton="@id/rb_red"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:text="Red"
+                android:id="@+id/rb_red"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:text="White"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:text="Blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RadioGroup>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="right">
+            <Button
+                android:text="Set Color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button
+                android:text="Cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:text="This is white textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="2">
+        <TableRow>
+            <Button
+                android:textColor="@color/color_1"
+                android:text="Color 1"/>
+            <Button
+                android:textColor="@color/color_2"
+                android:text="Color 2"/>
+            <Button
+                android:textColor="@color/color_3"
+                android:text="Color 3" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_span="3"
+                android:background="@color/color_2"
+                android:layout_height="10pt"/>
+        </TableRow>
+        <TableRow>
+            <Button
+                android:text="Clear"
+                android:layout_column="2"/>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

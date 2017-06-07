@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Ex8_1</string>
+
+    <!-- Main Activity -->
+    <string name="btn_switch1">Sum numbers</string>
+    <string name="btn_switch2">Sum numbers passing</string>
+</resources>

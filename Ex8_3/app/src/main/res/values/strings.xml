@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Ex8_3</string>
+
+    <!-- Main Activity -->
+    <string name="btn_switch1">Sum numbers</string>
+    <string name="btn_switch2">Sum numbers passing</string>
+    <string name="btn_switch3">Go to Tab screen</string>
+</resources>

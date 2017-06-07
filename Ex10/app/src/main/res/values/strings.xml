@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Ex10</string>
+
+    <string name="btn_add">Add message</string>
+    <string name="et_promt">Write something</string>
+</resources>
